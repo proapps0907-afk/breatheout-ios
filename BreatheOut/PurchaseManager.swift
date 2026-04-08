@@ -7,8 +7,8 @@ final class PurchaseManager: ObservableObject {
   static let shared = PurchaseManager()
 
   // ── Product IDs (must match App Store Connect exactly) ─────────────────────
-  static let monthlyID = "com.proapps.breatheOut.premium.monthly"
-  static let annualID  = "com.proapps.breatheOut.premium.annual"
+  static let monthlyID = "premium_monthly"
+  static let annualID  = "premium_yearly"
   static let allIDs    = [monthlyID, annualID]
 
   // ── State ──────────────────────────────────────────────────────────────────

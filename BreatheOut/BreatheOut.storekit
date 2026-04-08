@@ -32,7 +32,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "com.proapps.breatheOut.premium.annual",
+          "productID" : "premium_yearly",
           "recurringSubscriptionPeriod" : "P1Y",
           "referenceName" : "Annual Premium",
           "subscriptionGroupID" : "BREATHEOUT_PREMIUM_GROUP",
@@ -55,7 +55,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "com.proapps.breatheOut.premium.monthly",
+          "productID" : "premium_monthly",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Monthly Premium",
           "subscriptionGroupID" : "BREATHEOUT_PREMIUM_GROUP",
