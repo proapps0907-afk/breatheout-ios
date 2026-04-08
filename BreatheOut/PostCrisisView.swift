@@ -11,6 +11,7 @@ struct PostCrisisView: View {
   @State private var intensityBefore: Int = 5
   @State private var intensityAfter: Int = 3
   @State private var notes: String = ""
+  @State private var showPaywall = false
 
   let triggers = L10n.triggers
 
@@ -128,6 +129,7 @@ struct PostCrisisView: View {
           HStack(spacing: 16) {
             Button(action: {
               saveEntry()
+              store.markFirstUseDone()
               dismiss()
             }) {
               Text(L10n.postCrisisSkip)
@@ -140,7 +142,13 @@ struct PostCrisisView: View {
 
             Button(action: {
               saveEntry()
-              dismiss()
+              if !store.isFirstUseDone && !store.isPremium && !store.isPaywallShown {
+                store.markFirstUseDone()
+                showPaywall = true
+              } else {
+                store.markFirstUseDone()
+                dismiss()
+              }
             }) {
               Text(L10n.postCrisisSave)
                 .font(.system(size: 16, weight: .bold))
@@ -156,6 +164,9 @@ struct PostCrisisView: View {
         }
         .padding(.horizontal, 24)
       }
+    }
+    .fullScreenCover(isPresented: $showPaywall, onDismiss: { dismiss() }) {
+      PaywallView().environmentObject(store)
     }
   }
 

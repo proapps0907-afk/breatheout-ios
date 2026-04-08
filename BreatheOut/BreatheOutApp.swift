@@ -9,6 +9,10 @@ struct BreatheOutApp: App {
       ContentView()
         .environmentObject(store)
         .preferredColorScheme(.dark)
+        .task {
+          // Verify subscription status with Apple on every launch
+          await PurchaseManager.shared.refreshSubscriptionStatus()
+        }
     }
   }
 }

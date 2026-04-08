@@ -1,0 +1,71 @@
+{
+  "identifier" : "BreatheOutPremium",
+  "nonRenewingSubscriptions" : [
+  ],
+  "products" : [
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_storefront" : "USA"
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "BREATHEOUT_PREMIUM_GROUP",
+      "localizations" : [
+      ],
+      "name" : "BreatheOut Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+          ],
+          "codeOffers" : [
+          ],
+          "displayPrice" : "14.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "BREATHEOUT_ANNUAL_001",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Full access — $1.25/month. Best value.",
+              "displayName" : "Annual Premium",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.proapps.breatheOut.premium.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Annual Premium",
+          "subscriptionGroupID" : "BREATHEOUT_PREMIUM_GROUP",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+          ],
+          "codeOffers" : [
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "BREATHEOUT_MONTHLY_001",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Full access — monthly subscription.",
+              "displayName" : "Monthly Premium",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.proapps.breatheOut.premium.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Premium",
+          "subscriptionGroupID" : "BREATHEOUT_PREMIUM_GROUP",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

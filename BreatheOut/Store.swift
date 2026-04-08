@@ -57,6 +57,11 @@ final class Store: ObservableObject {
     isPaywallShown = true
   }
 
+  func markFirstUseDone() {
+    storage.isFirstUseDone = true
+    isFirstUseDone = true
+  }
+
   // ── Entries ────────────────────────────────────────────────────────────────
   func addEntry(_ entry: CrisisEntry) {
     storage.addEntry(entry)

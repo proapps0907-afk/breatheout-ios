@@ -21,6 +21,9 @@
 		A1000000000000000000000C /* PostCrisisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* PostCrisisView.swift */; };
 		A1000000000000000000000D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* Utils.swift */; };
 		A1000000000000000000000E /* ToolPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* ToolPickerView.swift */; };
+		A1000000000000000000000F /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* PurchaseManager.swift */; };
+		A10000000000000000000010 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* PaywallView.swift */; };
+		A10000000000000000000011 /* BreatheOut.storekit in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* BreatheOut.storekit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		A2000000000000000000000C /* PostCrisisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCrisisView.swift; sourceTree = "<group>"; };
 		A2000000000000000000000D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A2000000000000000000000E /* ToolPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPickerView.swift; sourceTree = "<group>"; };
+		A2000000000000000000000F /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000010 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* BreatheOut.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = BreatheOut.storekit; sourceTree = "<group>"; };
 		A30000000000000000000001 /* BreatheOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreatheOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,9 @@
 				A2000000000000000000000C /* PostCrisisView.swift */,
 				A2000000000000000000000D /* Utils.swift */,
 				A2000000000000000000000E /* ToolPickerView.swift */,
+				A2000000000000000000000F /* PurchaseManager.swift */,
+				A20000000000000000000010 /* PaywallView.swift */,
+				A20000000000000000000011 /* BreatheOut.storekit */,
 			);
 			path = BreatheOut;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10000000000000000000011 /* BreatheOut.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +181,8 @@
 				A1000000000000000000000C /* PostCrisisView.swift in Sources */,
 				A1000000000000000000000D /* Utils.swift in Sources */,
 				A1000000000000000000000E /* ToolPickerView.swift in Sources */,
+				A1000000000000000000000F /* PurchaseManager.swift in Sources */,
+				A10000000000000000000010 /* PaywallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
